@@ -1,0 +1,8 @@
+class Conversion {
+    public static void main(String[] args) {
+        double con_miles;
+        double km =10.8;
+        con_miles=km*1.6;
+        
+        System.out.println("The distance "+km+" km im miles is "+con_miles);
+    }
