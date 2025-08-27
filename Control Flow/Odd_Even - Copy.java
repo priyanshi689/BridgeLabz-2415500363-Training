@@ -1,5 +1,5 @@
  import java.util.*;
-class EvenOdd_Check 
+class EvenOddCheck 
 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
