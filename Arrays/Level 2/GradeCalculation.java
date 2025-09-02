@@ -58,8 +58,9 @@ import java.util.*;
             System.out.println("Marks of chemistry "+chem[i]);
             System.out.println("Marks of maths "+maths[i]);
            System.out.println("Grade is "+grades[i]);
-
+           System.out.println("Percentage is "+per[i]);
         }
         System.out.println();
     }
 }
+
