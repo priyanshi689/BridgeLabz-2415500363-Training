@@ -130,11 +130,11 @@ Learned JDBC (Java Database Connectivity) — connecting Java to MySQL
 
 Implemented CRUD operations using both Statement and PreparedStatement
 
-Practiced proper resource management using try-with-resources and connection closing
+Practiced try-with-resources and connection closing for resource management
 
 Explored Collections Framework — List, Set, Map, Generics, and HashMap
 
-Solved programs to merge both Collections and Database operations
+Solved programs merging both Collections and Database operations
 
 💼 Mini Project: Student Management System using JDBC & Collections
 
