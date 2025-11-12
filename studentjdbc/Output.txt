@@ -1,0 +1,214 @@
+Connection Created
+Operation Menu
+1.Insert Student
+2.Insert multiple Student
+3.Update Student
+4.Update multiple student
+5.Delete a Student
+6.Delete multiple Student
+7.Show Students
+X------------------X--------------------------X----------------------------X
+Enter the operation number you want to perform
+1
+Connection Created
+Enter Name
+Priyanshi Agarwal
+Enter Age
+19
+Enter Email
+priyanshi@gmail.com
+Enter Enrollment_Date
+2025-09-11
+Data Inserted Successfully
+
+mysql> select * from students;
++----+-------------------+------+---------------------+---------------+
+| id | name              | age  | email               | enrolled_date |
++----+-------------------+------+---------------------+---------------+
+| 16 | Priyanshi Agarwal |   19 | priyanshi@gmail.com | 2025-09-11    |
++----+-------------------+------+---------------------+---------------+
+X-------------------X----------------------------X--------------------------X
+Enter the operation number you want to perform
+2
+Connection Created
+Enter the number of students
+5
+Enter Name
+Ayush 
+Enter Age
+21
+Enter Email
+ayushagar@gmail.com
+Enter Enrollment_Date
+2025-09-11
+Data Inserted Successfully
+Enter Name
+Shivansh
+Enter Age
+23
+Enter Email
+shivansh@gmail.com
+Enter Enrollment_Date
+2025-09-12
+Data Inserted Successfully
+Enter Name
+Ram
+Enter Age
+23
+Enter Email
+ram@gmail.com
+Enter Enrollment_Date
+2025-09-13
+Data Inserted Successfully
+Enter Name
+Shyam
+Enter Age
+21
+Enter Email
+shyam@gmail.com
+Enter Enrollment_Date
+2025-09-13
+Data Inserted Successfully
+Enter Name
+Kavya
+Enter Age
+20
+Enter Email
+kavya@gmail.com
+Enter Enrollment_Date
+2025-09-12
+Data Inserted Successfully
+
+mysql> select * from students;
++----+-------------------+------+---------------------+---------------+
+| id | name              | age  | email               | enrolled_date |
++----+-------------------+------+---------------------+---------------+
+| 16 | Priyanshi Agarwal |   19 | priyanshi@gmail.com | 2025-09-11    |
+| 17 | Ayush             |   21 | ayushagar@gmail.com | 2025-09-11    |
+| 18 | Shivansh          |   23 | shivansh@gmail.com  | 2025-09-12    |
+| 19 | Ram               |   23 | ram@gmail.com       | 2025-09-13    |
+| 20 | Shyam             |   21 | shyam@gmail.com     | 2025-09-13    |
+| 21 | Kavya             |   20 | kavya@gmail.com     | 2025-09-12    |
++----+-------------------+------+---------------------+---------------+
+X-----------------------X-------------------------------X-------------------------X
+Enter the operation number you want to perform
+3
+Connection Created
+Enter Id to update
+19
+Enter Name to update
+Anshika
+Enter Age to update
+22
+Enter Email to update
+anshika@gmail.com
+Enter Enrollment_Date to update
+2025-09-12
+Student Details updated Successfully
+
++----+-------------------+------+---------------------+---------------+
+| id | name              | age  | email               | enrolled_date |
++----+-------------------+------+---------------------+---------------+
+| 16 | Priyanshi Agarwal |   19 | priyanshi@gmail.com | 2025-09-11    |
+| 17 | Ayush             |   21 | ayushagar@gmail.com | 2025-09-11    |
+| 18 | Shivansh          |   23 | shivansh@gmail.com  | 2025-09-12    |
+| 19 | Anshika           |   22 | ram@gmail.com       | 2025-09-13    |
+| 20 | Shyam             |   21 | shyam@gmail.com     | 2025-09-13    |
+| 21 | Kavya             |   20 | kavya@gmail.com     | 2025-09-12    |
++----+-------------------+------+---------------------+---------------+
+X--------------------X-------------------------X---------------------------X
+Enter the operation number you want to perform
+4
+Connection Created
+Enter the number of students
+2
+Enter the id of Student
+16
+Enter Name to update
+Priyanshi
+Enter Age to update
+19
+Enter Email to update
+priyanshi@gmail.com
+Enter Enrollment_Date to update
+2025-09-11
+Student details updated successfully
+Enter the id of Student
+20
+Enter Name to update
+Kush
+Enter Age to update
+19
+Enter Email to update
+kushagar@gmail.com
+Enter Enrollment_Date to update
+2025-09-11
+Student details updated successfully
+
+
+mysql> select * from students
+    -> ;
++----+-----------+------+---------------------+---------------+
+| id | name      | age  | email               | enrolled_date |
++----+-----------+------+---------------------+---------------+
+| 16 | Priyanshi |   19 | priyanshi@gmail.com | 2025-09-11    |
+| 17 | Ayush     |   21 | ayushagar@gmail.com | 2025-09-11    |
+| 18 | Shivansh  |   23 | shivansh@gmail.com  | 2025-09-12    |
+| 19 | Anshika   |   22 | ram@gmail.com       | 2025-09-13    |
+| 20 | Kush      |   19 | kushagar@gmail.com  | 2025-09-11    |
+| 21 | Kavya     |   20 | kavya@gmail.com     | 2025-09-12    |
++----+-----------+------+---------------------+---------------+
+X------------------------X---------------------X---------------------------X
+Enter the operation number you want to perform
+5
+Connection Created
+Enter the id for deletion
+21
+Data deleted successfully
+mysql> select * from students;
++----+-----------+------+---------------------+---------------+
+| id | name      | age  | email               | enrolled_date |
++----+-----------+------+---------------------+---------------+
+| 16 | Priyanshi |   19 | priyanshi@gmail.com | 2025-09-11    |
+| 17 | Ayush     |   21 | ayushagar@gmail.com | 2025-09-11    |
+| 18 | Shivansh  |   23 | shivansh@gmail.com  | 2025-09-12    |
+| 19 | Anshika   |   22 | ram@gmail.com       | 2025-09-13    |
+| 20 | Kush      |   19 | kushagar@gmail.com  | 2025-09-11    |
++----+-----------+------+---------------------+---------------+
+X---------------------------X-----------------------X-------------------------X
+Enter the operation number you want to perform
+6
+Connection Created
+Enter number of students you want to delete: 2
+Enter Student ID to delete 19
+Data deleted successfully
+Enter Student ID to delete 17
+Data deleted successfully
+mysql> select * from students;
++----+-----------+------+---------------------+---------------+
+| id | name      | age  | email               | enrolled_date |
++----+-----------+------+---------------------+---------------+
+| 16 | Priyanshi |   19 | priyanshi@gmail.com | 2025-09-11    |
+| 18 | Shivansh  |   23 | shivansh@gmail.com  | 2025-09-12    |
+| 20 | Kush      |   19 | kushagar@gmail.com  | 2025-09-11    |
++----+-----------+------+---------------------+---------------+
+X-------------------------X------------------------X------------------------------X
+Enter the operation number you want to perform
+7
+Connection Created
+ID: 16
+Name: Priyanshi
+Age: 19
+Email: priyanshi@gmail.com
+Enrolled Date: 2025-09-11
+ID: 18
+Name: Shivansh
+Age: 23
+Email: shivansh@gmail.com
+Enrolled Date: 2025-09-12
+ID: 20
+Name: Kush
+Age: 19
+Email: kushagar@gmail.com
+Enrolled Date: 2025-09-11
+X------------------------X--------------------------X--------------------------X
