@@ -1,4 +1,4 @@
-
+package deque;
 
 class Node{
 	    int data;
@@ -47,7 +47,7 @@ class Deque{
 	    Node temp = front;
 
 	    while (temp != null) {
-	        System.out.print(temp.data );
+	        System.out.print(temp.data + " ");
 	        temp = temp.next;
 	    }
 
@@ -55,7 +55,7 @@ class Deque{
 	}
 	int deleteAtFront() {
 	    if (front == null) {
-	        throw new RuntimeException("Deque is empty");
+	        return;
 	    }
 
 	    int val = front.data;
@@ -71,10 +71,12 @@ class Deque{
 	}
 	int deleteAtEnd() {
 	    if (rear == null) {
-	        return;
+	        throw new RuntimeException("Deque is empty");
 	    }
 
 	    int val = rear.data;
+
+	    // move rear backward
 	    rear = rear.prev;
 
 	    if (rear != null) {
@@ -86,22 +88,4 @@ class Deque{
 
 	    return val;
 	}
-	public static void main(String[] args) {
-        Deque deque = new Deque();
-
-        deque.insertAtFront(10);
-        deque.insertAtFront(20);
-        deque.insertAtEnd(30);
-        deque.insertAtEnd(40);
-
-        System.out.println("Deque after insertions:");
-        deque.display();
-
-        System.out.println("Deleted from front: " + deque.deleteAtFront());
-        System.out.println("Deleted from end: " + deque.deleteAtEnd());
-
-        System.out.println("Deque after deletions:");
-        deque.display();
-        
-    }
 }
