@@ -71,12 +71,10 @@ class Deque{
 	}
 	int deleteAtEnd() {
 	    if (rear == null) {
-	        throw new RuntimeException("Deque is empty");
+	        return;
 	    }
 
 	    int val = rear.data;
-
-	    // move rear backward
 	    rear = rear.prev;
 
 	    if (rear != null) {
