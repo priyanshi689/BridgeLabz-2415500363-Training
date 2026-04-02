@@ -86,4 +86,22 @@ class Deque{
 
 	    return val;
 	}
+	public static void main(String[] args) {
+        Deque deque = new Deque();
+
+        deque.insertAtFront(10);
+        deque.insertAtFront(20);
+        deque.insertAtEnd(30);
+        deque.insertAtEnd(40);
+
+        System.out.println("Deque after insertions:");
+        deque.display();
+
+        System.out.println("Deleted from front: " + deque.deleteAtFront());
+        System.out.println("Deleted from end: " + deque.deleteAtEnd());
+
+        System.out.println("Deque after deletions:");
+        deque.display();
+        
+    }
 }
