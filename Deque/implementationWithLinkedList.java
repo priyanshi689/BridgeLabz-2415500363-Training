@@ -70,38 +70,36 @@ class Deque{
 	    return val;
 	}
 	int deleteAtEnd() {
-	    if (rear == null) {
-	        return;
-	    }
-
-	    int val = rear.data;
-	    rear = rear.prev;
-
-	    if (rear != null) {
-	        rear.next = null;
-	    } else {
-	        // deque became empty
-	        front = null;
-	    }
-
-	    return val;
+		if (rear == null) {
+			throw new RuntimeException("Deque is empty"); // ya return -1;
+		}
+	
+		int val = rear.data;
+		rear = rear.prev;
+	
+		if (rear != null) {
+			rear.next = null;
+		} else { 
+			front = null;
+		}
+	
+		return val;
 	}
 	public static void main(String[] args) {
-        Deque deque = new Deque();
-
-        deque.insertAtFront(10);
-        deque.insertAtFront(20);
-        deque.insertAtEnd(30);
-        deque.insertAtEnd(40);
-
-        System.out.println("Deque after insertions:");
-        deque.display();
-
-        System.out.println("Deleted from front: " + deque.deleteAtFront());
-        System.out.println("Deleted from end: " + deque.deleteAtEnd());
-
-        System.out.println("Deque after deletions:");
-        deque.display();
-        
-    }
+		Deque deque = new Deque();
+	
+		deque.insertAtFront(10);
+		deque.insertAtFront(20);
+		deque.insertAtEnd(30);
+		deque.insertAtEnd(40);
+	
+		System.out.println("Deque after insertions:");
+		deque.display();
+	
+		System.out.println("Deleted from front: " + deque.deleteAtFront());
+		System.out.println("Deleted from end: " + deque.deleteAtEnd());
+	
+		System.out.println("Deque after deletions:");
+		deque.display();
+	}
 }
