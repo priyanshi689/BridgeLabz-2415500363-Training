@@ -27,7 +27,7 @@ public class circularQueueusingLinkedLIst {
             System.out.println("Queue is empty");
             return;
         }
-        if(front==null) {
+        if(front==rear) {
             rear = null;
             front = null;
         }
