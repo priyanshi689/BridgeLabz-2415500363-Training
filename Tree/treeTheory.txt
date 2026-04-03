@@ -1,0 +1,24 @@
+TREE 
+1. there is only one path between any two vertices
+2. the connection between the nodes is edges
+3. number of edges = no. of nodes - 1
+4. degree of node is defined as the no of child of that node
+5. degree of tree is eequal to the highest degree of node among all nodes
+6. leaf node is the node without child
+7. internal node - node with atleast one child
+8. in tree each step from top to bottom is considered as level 
+
+ TYPES OF TREE
+1. General tree
+2. Binary tree - each node have atmost two child
+3. binary search tree (BST) - the root > left node , root < right node
+4. AVL tree - 
+5. red-black tree
+6. N-way tree
+
+TRAVERSAL IN TREE
+1. BFS - search level- wise
+2. DFS - search onle complete side first until the leaf node found
+    a. preorder(Root,L,R)
+    b. postorder(L,R,Root)
+    c. inorder(L,Root,R) 
