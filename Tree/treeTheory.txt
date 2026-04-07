@@ -3,7 +3,7 @@ TREE
 2. the connection between the nodes is edges
 3. number of edges = no. of nodes - 1
 4. degree of node is defined as the no of child of that node
-5. degree of tree is eequal to the highest degree of node among all nodes
+5. degree of tree is eequal to the highest degree of node among all nodes 
 6. leaf node is the node without child
 7. internal node - node with atleast one child
 8. in tree each step from top to bottom is considered as level 
